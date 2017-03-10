@@ -1,0 +1,22 @@
+
+%clearfix {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+@import "layout/normalize";
+@import "layout/adjustement";
+@import "layout/fonts";
+
+
+@import "common";
+
+@import "sections/first_page";
+@import "sections/best";
+@import "sections/burgers";
+@import "sections/team";
+@import "sections/menu";
+@import "sections/response";
+@import "sections/delivery";
+@import "sections/map";

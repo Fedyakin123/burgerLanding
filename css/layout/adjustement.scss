@@ -1,0 +1,54 @@
+/*BASIC STYLES START*/
+
+* {
+  box-sizing: border-box;
+  font-family: 'gagalin';
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  display: block;
+}
+
+//.wrapper {
+//    position: relative;
+//    min-height: 100%;
+//    overflow: hidden;
+//    //min-width: 960px;
+//}
+//.wrapper::after {
+//    content: '';
+//    display: block;
+//    height: $footer-height;
+//}
+//
+//.container {
+//    //width: 940px;
+//    margin: 0 auto;
+//    max-width: 940px;
+//}
+
+/*BASIC STYLES END*/
