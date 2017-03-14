@@ -1,0 +1,95 @@
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  min-width: $container-width + 20px;
+}
+
+.header__container {
+  margin: 0 auto;
+  width: $container-width;
+}
+
+.container {
+  margin: 0 auto;
+  width: $container-width;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @extend %clearfix;
+}
+
+.wrapper {
+
+}
+
+.section {
+  height: 100vh;
+  min-height: 650px;
+  width: 100vw;
+  background-size: cover;
+}
+
+.btn {
+  background-color: $red;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.title {
+  font-family: 'gagalin';
+  text-transform: uppercase;
+  font-size: 72px;
+  color: $yellow;
+
+  &_black {
+    color: $black;
+  }
+
+  &_white {
+    color: #ffffff;
+  }
+  &_red {
+    color: $red;
+  }
+}
+
+.text {
+  font-family: 'ubuntu';
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+}
+
+
+
+
+
+
+//Backgrounds
+
+
+.best {
+  background-image: url("../img/bg/best_bg.jpg");
+}
+
+
+.team {
+   background-image: url("../img/bg/team_bg.jpg");
+}
+
+.menu{
+  background-image: url("../img/bg/menu_bg.jpg");
+}
+
+.reviews{
+  //background-image: url("../img/bg/response_bg.jpg");
+}
+
+.delivery {
+  background-image: url("../img/bg/delivery_bg.jpg");
+}
+
+.map {
+  background-image: url("../img/bg/map_bg.jpg");
+}

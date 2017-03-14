@@ -1,0 +1,21 @@
+.review__list {
+  &::after {
+    @extend %clearfix;
+  }
+}
+
+.review__item {
+  height: 50vh;
+  width: 25vw;
+  float: left;
+}
+.reviewer {
+  height: 100%;
+  width: 100%;
+}
+.reviewer__photo {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: 100%;
+}

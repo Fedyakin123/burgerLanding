@@ -1,0 +1,15 @@
+.burgers {
+  background: #f9b43b; /* Old browsers */
+  background: -moz-linear-gradient(top, #f9b43b 1%, #eb8c38 53%, #eb8c38 66%, #f9b43b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f9b43b 1%,#eb8c38 53%,#eb8c38 66%,#f9b43b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f9b43b 1%,#eb8c38 53%,#eb8c38 66%,#f9b43b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b43b', endColorstr='#f9b43b',GradientType=0 ); /* IE6-9 */
+
+  &__price {
+
+    &-currency {
+      font-size: 28px;
+    }
+  }
+}
+

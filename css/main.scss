@@ -1,17 +1,33 @@
+//Colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+$grey: #747373;
 
+$container-width: 940px;
+
+
+//Placeholders
 %clearfix {
-  content: '';
-  display: block;
-  clear: both;
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
 }
 
+
+// Layout
 @import "layout/normalize";
 @import "layout/adjustement";
-@import "layout/fonts";
+@import "layout/fonts.css";
 
-
+//Common
 @import "common";
 
+
+//Sections
 @import "sections/first_page";
 @import "sections/best";
 @import "sections/burgers";
