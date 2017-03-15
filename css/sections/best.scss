@@ -1,23 +1,36 @@
 .best {
+  text-align: center;
+  line-height: 1.42;
+
   &__list {
+    margin-top: 40px;
     width: 100%;
   }
 
   &__item {
     display: inline-block;
     width: 33%;
+    vertical-align: top;
   }
 }
 
 .why-best {
 
+
+  &__pic {
+   margin-bottom: 30px;
+  }
+
   &__title {
     font-family: 'lifehack';
     font-size: 24px;
     color: $black;
+    width: 100%;
   }
 
   &__description {
+    margin-top: 15px;
+    width: 100%;
     font-family: 'Ubuntu';
     font-size: 14px;
     color: $grey;

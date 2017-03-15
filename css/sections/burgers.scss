@@ -5,11 +5,180 @@
   background: linear-gradient(to bottom, #f9b43b 1%,#eb8c38 53%,#eb8c38 66%,#f9b43b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9b43b', endColorstr='#f9b43b',GradientType=0 ); /* IE6-9 */
 
+  &__order {
+    margin-top: 20px;
+  }
   &__price {
+    text-align: left;
+    display: inline-block;
+    vertical-align: baseline;
 
     &-currency {
       font-size: 28px;
+      vertical-align: bottom;
+      font-family: 'gagalin';
+      color: $red;
+      display: inline-block;
+      vertical-align: baseline;
     }
   }
+
+
+  &__btn {
+    display: inline-block;
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 13px;
+    vertical-align: text-bottom;
+  //  ***банутое выравнивание, поплыл тут немного
+  }
+
+  &__left, &__right {
+    float: left;
+    width: 50%;
+  }
+
+  &__left {
+    padding-top: 55px;
+  }
+  &__right {
+    padding-left: 40px;
+    padding-right: 10px;
+  }
+
+  &__title {
+    text-align: left;
+  }
+
+  &__description {
+    @include text;
+    line-height: 30px;
+  }
+
+
 }
 
+.recepie {
+//  Развлекухи с абсолютом
+  // Стили для состава
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  background-color: rgba($red, .4);
+  transition: .3s;
+
+  &:hover {
+    background-color: $red;
+
+    .recepie__dropdown {
+      left: 90px;
+      opacity: 1;
+    }
+  }
+
+  &__icon {
+
+    &-pic {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -75%);
+    }
+
+    &-text {
+      text-transform: uppercase;
+      font-family: 'gagalin';
+      color: white;
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+      margin-top: 60px;
+    }
+  }
+
+  &__dropdown {
+    //Стили для выпадающей плашки
+    width: 270px;
+    height: 335px;
+    border-radius: 5px;
+    background-color: rgba(white, .9);
+    opacity: 0;
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    transition: opacity .3s;
+    padding: 20px;
+  }
+
+  &__table {
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    color: $black;
+    height: 100%;
+  }
+
+}
+
+.kcal {
+  //Соответственно калории
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 90px;
+  height: 90px;
+  opacity: .5;
+
+  &__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -75%);
+  }
+
+  &__amount, &__measure {
+    position: absolute;
+    //TODO Засунуть эту шляпу в миксин
+    text-transform: uppercase;
+    font-family: 'gagalin';
+    color: white;
+    width: 100%;
+    text-align: center;
+  }
+  &__amount {
+    top:32%;
+    font-size: 20px;
+  }
+
+  &__measure {
+    top: 70%;
+    font-size: 16px;
+  }
+
+}
+
+// Стрелки для слайдера
+
+.burgers__arrow {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url('../img/icons/arrow-scroll.svg') no-repeat center center;
+
+  &_prev {
+    position: absolute;
+    right: 100%;
+    transform: rotate(90deg);
+  }
+  &_next {
+    position: absolute;
+    left: 100%;
+    transform: rotate(-90deg);
+  }
+
+}

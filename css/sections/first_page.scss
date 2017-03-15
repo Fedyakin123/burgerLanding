@@ -1,5 +1,6 @@
 .main {
   background-image: url("../img/bg/main_bg.jpg");
+  position: relative;
 
   &__left {
     float: left;
@@ -7,8 +8,13 @@
   }
 
   &__right {
+    padding-top: 115px;
     float: right;
     width: 50%;
+  }
+
+  &__title {
+    text-align: left;
   }
 
   &__description {
@@ -23,10 +29,12 @@
 
 .header {
   @extend %clearfix;
+  position: absolute;
+  //Абсолют стоит, чтобы хэдер выпал из потока и контейнер правильно выровнялся
+  width: 100%;
   padding-top: 11px;
 
   &__container {
-    position: relative;
     margin: 0 auto;
     width: $container-width;
     @extend %clearfix;
@@ -35,6 +43,7 @@
     float: left;
   }
   &__navigation {
+    padding-top: 25px;
     float: right;
   }
 
@@ -44,7 +53,11 @@
 
   &__item {
     display: inline-block;
-    margin-left: 17px;
+    margin-left: 12px;
+
+    &:hover {
+      text-decoration: underline;
+    }
 
     &::after {
       content: '';
@@ -59,6 +72,10 @@
 
     &:last-child::after {
       display: none;
+    }
+
+    &:last-child:hover {
+      text-decoration: none;
     }
 
     &:nth-child(6)::after {
@@ -76,5 +93,36 @@
     text-transform: uppercase;
 
   }
+}
+
+.bottom-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  transform: translateX(-50%);
+
+  &:hover {
+    .bottom-arrow__img {
+      width: 33px;
+      height: 33px;
+      bottom: 14px;
+    }
+
+  }
+
+  &__img {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s;
+
+
+  }
+
 }
 

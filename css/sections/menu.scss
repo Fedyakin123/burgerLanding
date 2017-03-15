@@ -1,10 +1,11 @@
 .menu {
   position: relative;
+  min-width: $container-width + 20px;
 
   &__title {
     position: absolute;
-    left: 100px;
-    top: 100px;
+    left: 120px;
+    top: 70px;
 
   }
 
@@ -73,7 +74,8 @@
 
     &__text {
       width: 550px;
-      padding: 20px;
+      padding: 60px 30px;
+      line-height: 1.8;
     }
   }
 }

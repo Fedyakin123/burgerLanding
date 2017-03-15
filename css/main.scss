@@ -14,6 +14,7 @@ $footer-height: 60px;
   font-size: 14px;
   font-weight: 300;
   color: #{$color};
+  line-height: 1.42;
 }
 
 //Placeholders
@@ -44,3 +45,5 @@ $footer-height: 60px;
 @import "sections/response";
 @import "sections/delivery";
 @import "sections/map";
+
+@import "sections/fixed_menu";

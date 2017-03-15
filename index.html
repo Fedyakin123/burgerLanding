@@ -63,10 +63,10 @@
             </header>
 
             <!-- Content-->
-                <div class="container">
-                   <div class="main__left">
-                       <div class="main__pic">
-                           <img src="img/decor/burger-drops.png" alt="Beautiful burger" class="main__img">
+                    <div class="container">
+                        <div class="main__left">
+                            <div class="main__pic">
+                                <img src="img/decor/burger-drops.png" alt="Beautiful burger" class="main__img">
                        </div>
                    </div>
                    <div class="main__right">'
@@ -77,11 +77,11 @@
                    </div>
                 </div>
 
-            <div class="bottom-arrow">
-                <a href="#best" class="bottom-arrow__pic">
+
+                <a href="#best" class="bottom-arrow">
                     <img src="img/icons/arrow-scroll.svg" alt="" class="bottom-arrow__img">
                 </a>
-            </div>
+            <!--</div>-->
 
         </section>
 
@@ -136,12 +136,6 @@
                     <div class="burgers__pic">
                         <img src="img/content/slider/Dark-beef-burger.png" alt="Dark beef burger" class="burgers__img">
                     </div>
-                    <div class="burgers__recepie">
-                        <img src="img/icons/burger.svg" alt="ingredients" class="burgers__recepie-icon">
-                    </div>
-                    <div class="burgers__kcal">
-                        <img src="img/icons/kkal.svg" alt="" class="burgers__kcal-icon">
-                    </div>
                 </div>
 
                 <div class="burgers__right">
@@ -150,10 +144,84 @@
                         <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра Эмменталь, лвумя помидорами, луком, салатом и соусом гриль. Теперь с добавлением экзотического соуса "Чураско"!</p>
                     </div>
                     <div class="burgers__order">
-                        <div class="burgers__price title title_red">500<span class="burgers__price-currency">рублей</span></div>
+                        <div class="burgers__price title title_red">500</div>
+                        <div class="burgers__price-currency">рублей</div>
                         <a href="#delivery" class="burgers__btn btn order-btn">Заказать</a>
                     </div>
                 </div>
+                <div class="recepie">
+                    <img src="img/icons/burger.svg" alt="ingredients" class="recepie__icon-pic">
+                    <div class="recepie__icon-text">Состав</div>
+                    <div class="recepie__dropdown">
+                        <!-- Таблица для выпадающей плашки-->
+                        <table class="recepie__table">
+                            <tbody>
+                            <tr class="recepie__table-row">
+                                <td class="recepie__table-cell">
+                                    <div class="recepie__table-icon">
+                                        <img src="img/icons/beef.svg" alt="beef" class="recepie__table-img">
+                                    </div>
+                                </td>
+                                <td class="recepie__table-cell">Говядина</td>
+                                <td class="recepie__table-cell">300г</td>
+                            </tr>
+                            <tr class="recepie__table-row">
+                                <td class="recepie__table-cell">
+                                    <div class="recepie__table-icon">
+                                        <img src="img/icons/buns.svg" alt="buns" class="recepie__table-img">
+                                    </div>
+                                </td>
+                                <td class="recepie__table-cell">Булочки</td>
+                                <td class="recepie__table-cell">100г</td>
+                            </tr>
+                            <tr class="recepie__table-row">
+                                <td class="recepie__table-cell">
+                                    <div class="recepie__table-icon">
+                                        <img src="img/icons/salad.svg" alt="salad" class="recepie__table-img">
+                                    </div>
+                                </td>
+                                <td class="recepie__table-cell">Зелень</td>
+                                <td class="recepie__table-cell">70г</td>
+                            </tr>
+                            <tr class="recepie__table-row">
+                                <td class="recepie__table-cell">
+                                    <div class="recepie__table-icon">
+                                        <img src="img/icons/sauce.svg" alt="sauce" class="recepie__table-img">
+                                    </div>
+                                </td>
+                                <td class="recepie__table-cell">Соус</td>
+                                <td class="recepie__table-cell">70г</td>
+                            </tr>
+                            <tr class="recepie__table-row">
+                                <td class="recepie__table-cell">
+                                    <div class="recepie__table-icon">
+                                        <img src="img/icons/cucumber.svg" alt="veggies" class="recepie__table-img">
+                                    </div>
+                                </td>
+                                <td class="recepie__table-cell">Овощи</td>
+                                <td class="recepie__table-cell">150г</td>
+                            </tr>
+                            <tr class="recepie__table-row">
+                                <td class="recepie__table-cell">
+                                    <div class="recepie__table-icon">
+                                        <img src="img/icons/cheese.svg" alt="cheese" class="recepie__table-img">
+                                    </div>
+                                </td>
+                                <td class="recepie__table-cell">Сыр</td>
+                                <td class="recepie__table-cell">80г</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="kcal">
+                    <img src="img/icons/kkal.svg" alt="Kcal" class="kcal__icon">
+                    <span class="kcal__amount">1200</span> <br/>
+                    <span class="kcal__measure">Kcal</span>
+                </div>
+                <a href="#" class="burgers__arrow burgers__arrow_prev"></a>
+                <a href="#" class="burgers__arrow burgers__arrow_next"></a>
             </div>
 
         </section>
@@ -166,7 +234,7 @@
                 <ul class="team-acco">
                     <li class="team-acco__item">
                         <a href="#" class="team-acco__trigger">
-                            Ричард Джеймс
+                            Финн Джейк
                         </a>
                         <div class="person">
                             <div class="person__pic">
@@ -194,7 +262,7 @@
                     </li>
                     <li class="team-acco__item">
                         <a href="#" class="team-acco__trigger">
-                            Ричард Джеймс
+                            Аарон Фанк
                         </a>
                         <div class="person">
                             <div class="person__pic">
@@ -207,7 +275,7 @@
                         </div>
                     </li><li class="team-acco__item">
                     <a href="#" class="team-acco__trigger">
-                        Ричард Джеймс
+                        Карабас Барабас
                     </a>
                     <div class="person">
                         <div class="person__pic">
@@ -277,9 +345,11 @@
                         <div class="reviewer__photo" style="background-image: url('img/content/reviewers/rew_1.jpg');">
                         </div>
                         <div class="reviewer__hover">
-                            <!--<div class="reviewer__name"></div>-->
-                            <!--<div class="reviewer__text text"></div>-->
-                            <!--<div class="reviewer__btn btn"></div>-->
+                            <div class="reviewer__info">
+                                <div class="reviewer__name">Иван Крузенштерн</div>
+                                <div class="reviewer__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
+                                <a href="#" class="reviewer__btn btn">Подробнее</a>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -289,9 +359,11 @@
 
                         </div>
                         <div class="reviewer__hover">
-                            <div class="reviewer__name"></div>
-                            <div class="reviewer__text text"></div>
-                            <!--<div class="reviewer__btn btn"></div>-->
+                            <div class="reviewer__info">
+                                <div class="reviewer__name">Иван Крузенштерн</div>
+                                <div class="reviewer__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
+                                <a href="#" class="reviewer__btn btn">Подробнее</a>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -301,9 +373,11 @@
 
                         </div>
                         <div class="reviewer__hover">
-                            <div class="reviewer__name"></div>
-                            <div class="reviewer__text text"></div>
-                            <!--<div class="reviewer__btn btn"></div>-->
+                            <div class="reviewer__info">
+                                <div class="reviewer__name">Иван Крузенштерн</div>
+                                <div class="reviewer__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
+                                <a href="#" class="reviewer__btn btn">Подробнее</a>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -313,9 +387,11 @@
 
                         </div>
                         <div class="reviewer__hover">
-                            <div class="reviewer__name"></div>
-                            <div class="reviewer__text text"></div>
-                            <!--<div class="reviewer__btn btn"></div>-->
+                            <div class="reviewer__info">
+                                <div class="reviewer__name">Иван Крузенштерн</div>
+                                <div class="reviewer__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
+                                <a href="#" class="reviewer__btn btn">Подробнее</a>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -325,9 +401,11 @@
 
                         </div>
                         <div class="reviewer__hover">
-                            <div class="reviewer__name"></div>
-                            <div class="reviewer__text text"></div>
-                            <!--<div class="reviewer__btn btn"></div>-->
+                            <div class="reviewer__info">
+                                <div class="reviewer__name">Иван Крузенштерн</div>
+                                <div class="reviewer__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
+                                <a href="#" class="reviewer__btn btn">Подробнее</a>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -337,9 +415,11 @@
 
                         </div>
                         <div class="reviewer__hover">
-                            <div class="reviewer__name"></div>
-                            <div class="reviewer__text text"></div>
-                            <!--<div class="reviewer__btn btn"></div>-->
+                            <div class="reviewer__info">
+                                <div class="reviewer__name">Иван Крузенштерн</div>
+                                <div class="reviewer__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
+                                <a href="#" class="reviewer__btn btn">Подробнее</a>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -349,9 +429,11 @@
 
                         </div>
                         <div class="reviewer__hover">
-                            <div class="reviewer__name"></div>
-                            <div class="reviewer__text text"></div>
-                            <!--<div class="reviewer__btn btn"></div>-->
+                            <div class="reviewer__info">
+                                <div class="reviewer__name">Иван Крузенштерн</div>
+                                <div class="reviewer__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
+                                <a href="#" class="reviewer__btn btn">Подробнее</a>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -361,9 +443,11 @@
 
                         </div>
                         <div class="reviewer__hover">
-                            <div class="reviewer__name"></div>
-                            <div class="reviewer__text text"></div>
-                            <!--<div class="reviewer__btn btn"></div>-->
+                            <div class="reviewer__info">
+                                <div class="reviewer__name">Иван Крузенштерн</div>
+                                <div class="reviewer__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
+                                <a href="#" class="reviewer__btn btn">Подробнее</a>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -498,5 +582,31 @@
         </section>
 
     </div>
+    <ul class="fixed-menu">
+        <li class="fixed-menu__item">
+            <a href="#main" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+            <a href="#best" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+            <a href="#burgers" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+            <a href="#team" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+            <a href="#menu" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+            <a href="#review" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+            <a href="#delivery" class="fixed-menu__link"></a>
+        </li>
+        <li class="fixed-menu__item">
+            <a href="#map" class="fixed-menu__link"></a>
+        </li>
+    </ul>
 </body>
 </html>
