@@ -963,7 +963,7 @@ label {
     cursor: pointer; }
     .order__radio-real {
       position: absolute;
-      left: -9999px; }
+      left: -999px; }
       .order__radio-real:checked + .order__radio-fake::after {
         width: 8px;
         height: 8px; }
@@ -975,7 +975,8 @@ label {
         border-bottom: 4px solid #e35028;
         border-left: 4px solid #e35028;
         transform: translate(-50%, -62%) rotate(-45deg);
-        transform-origin: center; }
+        transform-origin: center;
+        opacity: 1; }
     .order__radio-fake {
       width: 16px;
       height: 16px;
