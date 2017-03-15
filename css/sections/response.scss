@@ -1,21 +1,44 @@
 .review__list {
-  &::after {
-    @extend %clearfix;
-  }
+  min-width: $container-width+20px;
+  height: 100%;
+  @extend %clearfix;
 }
 
 .review__item {
-  height: 50vh;
-  width: 25vw;
+  height: 50%;
+  width: 25%;
   float: left;
+
+  &:hover{
+
+    .reviewer__hover {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
 }
 .reviewer {
   height: 100%;
   width: 100%;
-}
-.reviewer__photo {
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-size: 100%;
+  position: relative;
+
+  &__photo {
+    height: 100%;
+    width: 100%;
+    background: no-repeat center center;
+    background-size: cover;
+    position: relative;
+  }
+
+  &__hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(20, 20, 20, .7);
+    transform: scale(0.9);
+    opacity: 0;
+    transition: .5S;
+  }
 }

@@ -1,0 +1,67 @@
+.yandex-map {
+  width: 100%;
+  height: calc(100% - 60px);
+}
+
+.footer {
+  min-height: $footer-height;
+  width: 100%;
+  background-color: #111;
+  @extend %clearfix;
+
+  &__container {
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+    margin: 0 auto;
+    width: $container-width;
+    @extend %clearfix;
+  }
+
+  &__left {
+    float: left;
+  }
+
+  &__right {
+    float: right;
+    height: 100%;
+  }
+}
+
+.contacts {
+
+  &__adr {
+    @include text;
+  }
+  &__phone {
+    @include text($red);
+    font-weight: 500;
+  }
+}
+
+.socials {
+
+  //&__list {
+    //height: 100%;
+  //}
+
+  &__item {
+    display: inline-block;
+    //height: 100%;
+  }
+
+  &__link {
+    opacity: .3;
+    transition: .5s;
+    margin-right: 10px;
+
+    &:hover {
+      opacity: 1;
+    }
+
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}

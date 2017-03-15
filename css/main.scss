@@ -6,7 +6,15 @@ $red: #e35028;
 $grey: #747373;
 
 $container-width: 940px;
+$footer-height: 60px;
 
+
+@mixin text($color: white) {
+  font-family: 'ubuntu';
+  font-size: 14px;
+  font-weight: 300;
+  color: #{$color};
+}
 
 //Placeholders
 %clearfix {

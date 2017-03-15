@@ -4,10 +4,6 @@
   min-width: $container-width + 20px;
 }
 
-.header__container {
-  margin: 0 auto;
-  width: $container-width;
-}
 
 .container {
   margin: 0 auto;
@@ -17,10 +13,6 @@
   transform: translateY(-50%);
 
   @extend %clearfix;
-}
-
-.wrapper {
-
 }
 
 .section {
@@ -34,6 +26,9 @@
   background-color: $red;
   border-radius: 6px;
   padding: 10px;
+  @include text;
+  text-transform: uppercase;
+  border: none;
 }
 
 .title {
@@ -41,6 +36,8 @@
   text-transform: uppercase;
   font-size: 72px;
   color: $yellow;
+  //margin: 0 auto;
+  text-align: center;
 
   &_black {
     color: $black;

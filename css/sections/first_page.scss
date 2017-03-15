@@ -23,7 +23,14 @@
 
 .header {
   @extend %clearfix;
+  padding-top: 11px;
 
+  &__container {
+    position: relative;
+    margin: 0 auto;
+    width: $container-width;
+    @extend %clearfix;
+  }
   &__logo {
     float: left;
   }

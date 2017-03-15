@@ -1,0 +1,79 @@
+.menu {
+  position: relative;
+
+  &__title {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+
+  }
+
+
+//  Accordion
+
+  &-acco {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    @extend %clearfix;
+
+    &__item {
+      float: left;
+      height: 100%;
+      @extend %clearfix;
+
+    //  for Active
+      &_active {
+        .menu-acco__content {
+          width: 550px;
+        }
+
+        .menu-acco__trigger-title {
+          color: $yellow;
+        }
+      }
+    }
+
+    &__trigger {
+      height: 100%;
+      width: 80px;
+      display: block;
+      background:  no-repeat center center;
+      background-size: cover;
+      position: relative;
+      float: left;
+
+      &-title {
+        font-size: 40px;
+        white-space: nowrap;
+        position: absolute;
+        top:50%;
+        height: 80px;
+        margin-top: -40px;
+        width: 650px;
+        left: 50%;
+        margin-left: -312px;
+        transform: rotate(-90deg);
+        text-align: center;
+      }
+
+    }
+
+    &__content {
+      display: block;
+      background: rgba(47, 50, 52, 0.93);
+      width: 0;
+      height: 100%;
+      float: left;
+      overflow: hidden;
+      transition: width .7s;
+    }
+
+    &__text {
+      width: 550px;
+      padding: 20px;
+    }
+  }
+}
