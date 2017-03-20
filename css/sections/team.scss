@@ -80,6 +80,8 @@
   &__about {
     float: left;
     width: 65%;
+
+    @include content-overflow(150px)
   }
 
   &__occupation {

@@ -26,6 +26,8 @@
     font-size: 24px;
     color: $black;
     width: 100%;
+
+    @include content-overflow(120px);
   }
 
   &__description {
@@ -34,5 +36,7 @@
     font-family: 'Ubuntu';
     font-size: 14px;
     color: $grey;
+
+    @include content-overflow(250px)
   }
 }

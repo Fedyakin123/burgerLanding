@@ -76,6 +76,8 @@
       width: 550px;
       padding: 60px 30px;
       line-height: 1.8;
+
+      @include content-overflow(600px);
     }
   }
 }

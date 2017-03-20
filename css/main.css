@@ -478,7 +478,9 @@ label {
   text-transform: uppercase;
   font-size: 72px;
   color: #f9b43b;
-  text-align: center; }
+  text-align: center;
+  max-height: 170px;
+  overflow: hidden; }
   .title_black {
     color: #2f3234; }
   .title_white {
@@ -518,17 +520,23 @@ label {
     float: right;
     width: 50%; }
   .main__title {
-    text-align: left; }
+    text-align: left;
+    max-height: 150px;
+    overflow: hidden; }
   .main__description {
     font-size: 65px;
     font-family: 'lifehack';
     color: #fff;
-    text-transform: lowercase; }
+    text-transform: lowercase;
+    max-height: 150px;
+    overflow: hidden; }
 
 .header {
   position: absolute;
   width: 100%;
-  padding-top: 11px; }
+  padding-top: 11px;
+  max-height: 150px;
+  overflow: hidden; }
   .header__container {
     margin: 0 auto;
     width: 940px; }
@@ -536,7 +544,9 @@ label {
     float: left; }
   .header__navigation {
     padding-top: 25px;
-    float: right; }
+    float: right;
+    max-width: 70%;
+    line-height: 2; }
 
 .navigation__item {
   display: inline-block;
@@ -602,13 +612,17 @@ label {
   font-family: 'lifehack';
   font-size: 24px;
   color: #2f3234;
-  width: 100%; }
+  width: 100%;
+  max-height: 120px;
+  overflow: hidden; }
 .why-best__description {
   margin-top: 15px;
   width: 100%;
   font-family: 'Ubuntu';
   font-size: 14px;
-  color: #747373; }
+  color: #747373;
+  max-height: 250px;
+  overflow: hidden; }
 
 .burgers {
   background: #f9b43b;
@@ -626,14 +640,14 @@ label {
   .burgers__price {
     text-align: left;
     display: inline-block;
-    vertical-align: baseline; }
+    vertical-align: text-bottom;
+    line-height: 0.8; }
     .burgers__price-currency {
       font-size: 28px;
-      vertical-align: bottom;
       font-family: 'gagalin';
       color: #e35028;
       display: inline-block;
-      vertical-align: baseline; }
+      vertical-align: text-bottom; }
   .burgers__btn {
     display: inline-block;
     margin-left: 30px;
@@ -806,7 +820,9 @@ label {
     margin: 10px 20px; }
   .person__about {
     float: left;
-    width: 65%; }
+    width: 65%;
+    max-height: 150px;
+    overflow: hidden; }
   .person__occupation {
     font-weight: 500; }
   .person__description {
@@ -863,7 +879,9 @@ label {
     .menu-acco__text {
       width: 550px;
       padding: 60px 30px;
-      line-height: 1.8; }
+      line-height: 1.8;
+      max-height: 600px;
+      overflow: hidden; }
 
 .review__list {
   min-width: 960px;
@@ -907,7 +925,9 @@ label {
     text-transform: uppercase; }
   .reviewer__text {
     margin-top: 25px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    max-height: 200px;
+    overflow: hidden; }
   .reviewer__btn {
     margin-top: 20px;
     background-color: #2f3234;
@@ -944,6 +964,8 @@ label {
     font-weight: 300;
     color: white;
     line-height: 1.42; }
+  .order__label {
+    display: block; }
   .order__input {
     padding: 5px 10px;
     width: 100%;
@@ -1030,19 +1052,22 @@ label {
     float: right;
     height: 100%; }
 
-.contacts__adr {
-  font-family: 'ubuntu';
-  font-size: 14px;
-  font-weight: 300;
-  color: white;
-  line-height: 1.42; }
-.contacts__phone {
-  font-family: 'ubuntu';
-  font-size: 14px;
-  font-weight: 300;
-  color: #e35028;
-  line-height: 1.42;
-  font-weight: 500; }
+.contacts {
+  max-height: 50px;
+  overflow: hidden; }
+  .contacts__adr {
+    font-family: 'ubuntu';
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    line-height: 1.42; }
+  .contacts__phone {
+    font-family: 'ubuntu';
+    font-size: 14px;
+    font-weight: 300;
+    color: #e35028;
+    line-height: 1.42;
+    font-weight: 500; }
 
 .socials__item {
   display: inline-block; }

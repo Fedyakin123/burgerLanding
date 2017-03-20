@@ -11,15 +11,16 @@
   &__price {
     text-align: left;
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: text-bottom;
+    line-height: 0.8;
 
     &-currency {
       font-size: 28px;
-      vertical-align: bottom;
       font-family: 'gagalin';
       color: $red;
       display: inline-block;
-      vertical-align: baseline;
+      vertical-align: text-bottom;
+
     }
   }
 
@@ -53,6 +54,8 @@
   &__description {
     @include text;
     line-height: 30px;
+
+    //@include content-overflow();
   }
 
 

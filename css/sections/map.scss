@@ -30,6 +30,8 @@
 
 .contacts {
 
+  @include content-overflow(50px);
+
   &__adr {
     @include text;
   }

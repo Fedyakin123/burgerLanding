@@ -17,6 +17,11 @@ $footer-height: 60px;
   line-height: 1.42;
 }
 
+@mixin content-overflow($height: 170px) {
+  max-height: $height;
+  overflow: hidden;
+}
+
 //Placeholders
 %clearfix {
   &::after {

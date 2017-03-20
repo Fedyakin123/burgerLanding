@@ -13,8 +13,11 @@
     width: 50%;
   }
 
+
   &__title {
     text-align: left;
+
+   @include content-overflow(150px);
   }
 
   &__description {
@@ -23,6 +26,8 @@
     color: #fff;
     text-transform: lowercase;
     //line-height: 1em; нужно ли?
+
+   @include content-overflow(150px);
 
   }
 }
@@ -33,6 +38,9 @@
   //Абсолют стоит, чтобы хэдер выпал из потока и контейнер правильно выровнялся
   width: 100%;
   padding-top: 11px;
+
+  @include content-overflow(150px);
+
 
   &__container {
     margin: 0 auto;
@@ -45,6 +53,10 @@
   &__navigation {
     padding-top: 25px;
     float: right;
+
+    //защита от выползания контента
+    max-width: 70%;
+    line-height: 2;
   }
 
 }

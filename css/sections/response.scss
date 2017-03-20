@@ -59,6 +59,8 @@
   &__text {
     margin-top: 25px;
     line-height: 1.5;
+
+    @include content-overflow(200px);
   }
   &__btn {
     margin-top: 20px;
