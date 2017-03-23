@@ -1,7 +1,7 @@
 //$(document).ready(function() {
     //console.log('sfsd');
 //});
-// Реализуем One Page Scroll;
+// Р РµР°Р»РёР·СѓРµРј One Page Scroll;
 
 $(function() {
 
@@ -21,7 +21,7 @@ $(function() {
                 .siblings().removeClass('active');
 
             $('.fixed-menu__item').eq(sectionNumber).addClass('active')
-                .siblings().removeClass('active'); // перемещаем кружок на фикс меню
+                .siblings().removeClass('active'); // РїРµСЂРµРјРµС‰Р°РµРј РєСЂСѓР¶РѕРє РЅР° С„РёРєСЃ РјРµРЅСЋ
 
 
             screen.css({
@@ -30,11 +30,11 @@ $(function() {
         }
     $('.maincontent').on('transitionend', function() {
         //console.log("trs over");
-        //Засунул таймаут в обработчик, чтобы корректно работало при зажатой клавише например
+        //Р—Р°СЃСѓРЅСѓР» С‚Р°Р№РјР°СѓС‚ РІ РѕР±СЂР°Р±РѕС‚С‡РёРє, С‡С‚РѕР±С‹ РєРѕСЂСЂРµРєС‚РЅРѕ СЂР°Р±РѕС‚Р°Р»Рѕ РїСЂРё Р·Р°Р¶Р°С‚РѕР№ РєР»Р°РІРёС€Рµ РЅР°РїСЂРёРјРµСЂ
         setTimeout(function() {
             inScroll = false;
 
-            //TODO поменять цвет фиксед меню в светлых секциях
+            //TODO РїРѕРјРµРЅСЏС‚СЊ С†РІРµС‚ С„РёРєСЃРµРґ РјРµРЅСЋ РІ СЃРІРµС‚Р»С‹С… СЃРµРєС†РёСЏС…
         }, 300);
     });
 
@@ -64,16 +64,16 @@ $(function() {
     });
 
 
-    //Навешиваем обработчик на фикс меню
+    //РќР°РІРµС€РёРІР°РµРј РѕР±СЂР°Р±РѕС‚С‡РёРє РЅР° С„РёРєСЃ РјРµРЅСЋ
 
     $('.fixed-menu__link').on('click', function(e) {
         e.preventDefault();
-        var sectionNumber = $(this).parent().index(); // Берем индекс ЛИ-шки внутри меню, он соответствует номеру секции
+        var sectionNumber = $(this).parent().index(); // Р‘РµСЂРµРј РёРЅРґРµРєСЃ Р›Р-С€РєРё РІРЅСѓС‚СЂРё РјРµРЅСЋ, РѕРЅ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РЅРѕРјРµСЂСѓ СЃРµРєС†РёРё
 
         scrollToSection(sectionNumber)
     });
 
-    //Обработчик стрелки вниз
+    //РћР±СЂР°Р±РѕС‚С‡РёРє СЃС‚СЂРµР»РєРё РІРЅРёР·
 
     $('.bottom-arrow').on('click', function(e) {
         e.preventDefault();
@@ -81,16 +81,16 @@ $(function() {
         scrollToSection(1);
     });
 
-    //Обработчик навигации
+    //РћР±СЂР°Р±РѕС‚С‡РёРє РЅР°РІРёРіР°С†РёРё
 
     $('.navigation__link').on('click', function(e) {
         e.preventDefault();
 
-        var sectionNumber = $(this).attr('href'); //берем предварительно заготовленный хреф
+        var sectionNumber = $(this).attr('href'); //Р±РµСЂРµРј РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕ Р·Р°РіРѕС‚РѕРІР»РµРЅРЅС‹Р№ С…СЂРµС„
 
         scrollToSection(sectionNumber);
     });
-// Обработчик стрелок клавиатуры
+// РћР±СЂР°Р±РѕС‚С‡РёРє СЃС‚СЂРµР»РѕРє РєР»Р°РІРёР°С‚СѓСЂС‹
     $(document).on('keydown', function(e) {
         var currentSection = section.filter('.active'),
             nextSection = currentSection.next(),
@@ -110,13 +110,13 @@ $(function() {
         }
 
     });
-//TODO обработчик по Shift+key
-    // Можно попробовать определять текущую секцию след. образом
+//TODO РѕР±СЂР°Р±РѕС‚С‡РёРє РїРѕ Shift+key
+    // РњРѕР¶РЅРѕ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ РѕРїСЂРµРґРµР»СЏС‚СЊ С‚РµРєСѓС‰СѓСЋ СЃРµРєС†РёСЋ СЃР»РµРґ. РѕР±СЂР°Р·РѕРј
     //     currentSection = e.target.closest('section');
 });
 
 
-// Cлайдер owl carousel
+// CР»Р°Р№РґРµСЂ owl carousel
 
 $(function(){
    var burgersSlider = $('.owl-carousel').owlCarousel({
@@ -132,7 +132,7 @@ $(function(){
         e.preventDefault();
         burgersSlider.trigger('next.owl.carousel', [800]);
 
-    //    TODO создать обьект с составом бургера и менять хтмл в таблице и калораж, в зависимости от бургера
+    //    TODO СЃРѕР·РґР°С‚СЊ РѕР±СЊРµРєС‚ СЃ СЃРѕСЃС‚Р°РІРѕРј Р±СѓСЂРіРµСЂР° Рё РјРµРЅСЏС‚СЊ С…С‚РјР» РІ С‚Р°Р±Р»РёС†Рµ Рё РєР°Р»РѕСЂР°Р¶, РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ Р±СѓСЂРіРµСЂР°
     });
 
 // Go to the previous item
@@ -142,11 +142,11 @@ $(function(){
         e.preventDefault();
         burgersSlider.trigger('prev.owl.carousel', [800]);
     });
-//TODO сделать чтобы состав менялся для разных бургеров
-    //TODO смена слайдов по стрелкам
+//TODO СЃРґРµР»Р°С‚СЊ С‡С‚РѕР±С‹ СЃРѕСЃС‚Р°РІ РјРµРЅСЏР»СЃСЏ РґР»СЏ СЂР°Р·РЅС‹С… Р±СѓСЂРіРµСЂРѕРІ
+    //TODO СЃРјРµРЅР° СЃР»Р°Р№РґРѕРІ РїРѕ СЃС‚СЂРµР»РєР°Рј
 
 
-//    Меняем калораж бургеров:
+//    РњРµРЅСЏРµРј РєР°Р»РѕСЂР°Р¶ Р±СѓСЂРіРµСЂРѕРІ:
     $('.burgers__arrow').on('click', function() {
         //console.log('sfs');
         var activeSlide = $('.owl-item').filter('.active');
@@ -158,7 +158,7 @@ $(function(){
 
 
         switch (activeSlide.index()) {
-            case 2: kcal.text('777'); // Последний слайд дублируется для замыкания
+            case 2: kcal.text('777'); // РџРѕСЃР»РµРґРЅРёР№ СЃР»Р°Р№Рґ РґСѓР±Р»РёСЂСѓРµС‚СЃСЏ РґР»СЏ Р·Р°РјС‹РєР°РЅРёСЏ
                 break;
             case 3: kcal.text('1200');
                 break;
@@ -174,7 +174,7 @@ $(function(){
     });
 });
 
-// Вертикальный аккордеон
+// Р’РµСЂС‚РёРєР°Р»СЊРЅС‹Р№ Р°РєРєРѕСЂРґРµРѕРЅ
 
 $(function() {
     var inAnimation = false;
@@ -208,18 +208,18 @@ $(function() {
 
    });
 
-//Закрываем по клику вне аккордеона
+//Р—Р°РєСЂС‹РІР°РµРј РїРѕ РєР»РёРєСѓ РІРЅРµ Р°РєРєРѕСЂРґРµРѕРЅР°
     $(document).on('click', function(e) {
         var $this = $(e.target);
-        if (!$this.closest('.team-acco').length) { // проверяем по длине, есть ли аккордеон в родителях
-            $('.team-acco__item').filter('.active').removeClass('active') //убираем класс
-                .find('.person').slideUp(); //захлопываем
+        if (!$this.closest('.team-acco').length) { // РїСЂРѕРІРµСЂСЏРµРј РїРѕ РґР»РёРЅРµ, РµСЃС‚СЊ Р»Рё Р°РєРєРѕСЂРґРµРѕРЅ РІ СЂРѕРґРёС‚РµР»СЏС…
+            $('.team-acco__item').filter('.active').removeClass('active') //СѓР±РёСЂР°РµРј РєР»Р°СЃСЃ
+                .find('.person').slideUp(); //Р·Р°С…Р»РѕРїС‹РІР°РµРј
 
         }
     });
 });
 
-// Горизонтальный аккордеон
+// Р“РѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹Р№ Р°РєРєРѕСЂРґРµРѕРЅ
 
 $(function() {
     $('.menu-acco__trigger').on('click', function(e) {
@@ -229,7 +229,7 @@ $(function() {
             item = $this.closest('.menu-acco__item'),
             container = $this.closest('.menu-acco'),
             items = container.find('.menu-acco__item');
-                //Не пригодились
+                //РќРµ РїСЂРёРіРѕРґРёР»РёСЃСЊ
             //content = item.find('.menu-acco__content'),
             //otherContent = container.find('.menu-acco__content');
 
@@ -240,12 +240,12 @@ $(function() {
             item.removeClass('active');
         }
 
-    // TODO попробовать реализовать используя animate
+    // TODO РїРѕРїСЂРѕР±РѕРІР°С‚СЊ СЂРµР°Р»РёР·РѕРІР°С‚СЊ РёСЃРїРѕР»СЊР·СѓСЏ animate
     });
-//закрываем по клику вне аккордеона
+//Р·Р°РєСЂС‹РІР°РµРј РїРѕ РєР»РёРєСѓ РІРЅРµ Р°РєРєРѕСЂРґРµРѕРЅР°
     $(document).on('click', function(e) {
         var $this = $(e.target);
-        if (!$this.closest('.menu-acco').length) { // проверяем по длине, есть ли аккордеон в родителях
+        if (!$this.closest('.menu-acco').length) { // РїСЂРѕРІРµСЂСЏРµРј РїРѕ РґР»РёРЅРµ, РµСЃС‚СЊ Р»Рё Р°РєРєРѕСЂРґРµРѕРЅ РІ СЂРѕРґРёС‚РµР»СЏС…
             $('.menu-acco__item').filter('.active').removeClass('active');
         }
     });
@@ -255,7 +255,7 @@ $(function() {
 //Input Mask
 
 $(function() {
-    $('input[name="phone"]').inputmask('+7 (999) 999 99 99'); // Использовали селектор по тегу с атрибутом
+    $('input[name="phone"]').inputmask('+7 (999) 999 99 99'); // РСЃРїРѕР»СЊР·РѕРІР°Р»Рё СЃРµР»РµРєС‚РѕСЂ РїРѕ С‚РµРіСѓ СЃ Р°С‚СЂРёР±СѓС‚РѕРј
 });
 
 
@@ -278,7 +278,7 @@ $(function() {
 });
 
 
-//Подключаем яндекс карты
+//РџРѕРґРєР»СЋС‡Р°РµРј СЏРЅРґРµРєСЃ РєР°СЂС‚С‹
 
 
 $(function(){
@@ -292,7 +292,7 @@ $(function(){
             controls: []
         });
 
-//коллекция координат
+//РєРѕР»Р»РµРєС†РёСЏ РєРѕРѕСЂРґРёРЅР°С‚
 
         var coords = [
                 [59.90760194, 30.31318547],
@@ -305,7 +305,7 @@ $(function(){
                 iconImageSize: [46, 57],
                 iconImageOffset: [-24, -50]
             });
-//перебираем коллекцию
+//РїРµСЂРµР±РёСЂР°РµРј РєРѕР»Р»РµРєС†РёСЋ
 
         for (var i = 0; i < coords.length; i++) {
             myCollection.add(new ymaps.Placemark(coords[i]));
@@ -333,7 +333,7 @@ $(function() {
             type: 'POST',
             data: formData,
             success: function(data) {
-                console.log(data + "123");
+                console.log(data);
             }
         });
     })
