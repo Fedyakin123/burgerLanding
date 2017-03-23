@@ -1139,6 +1139,26 @@ label {
     line-height: 1.5;
     color: #2f3234; }
 
+.status-popup {
+  display: none;
+  width: 260px;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 20px; }
+  .status-popup__inner {
+    text-align: center; }
+  .status-popup__message {
+    margin-bottom: 35px;
+    font-family: 'ubuntu';
+    font-size: 14px;
+    font-weight: 300;
+    color: #2f3234;
+    line-height: 1.42; }
+  .status-popup#error-popup .status-popup__message {
+    color: #e35028; }
+  .status-popup .fancybox-close-small {
+    display: none; }
+
 .fancybox-overlay {
   background: rgba(47, 50, 52, 0.92); }
 

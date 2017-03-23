@@ -7,7 +7,7 @@
 //
 //
 //echo $result;
-
+header('Content-Type: application/json');
 require "vendor/PHPMailer-master/PHPMailerAutoload.php";
 
 $name = $_POST['name'];
@@ -19,7 +19,7 @@ $name = $_POST['name'];
 //if ($name == "phpmailer") {
     $mail = new PHPMailer;
 
-    $mail->SMTPDebug = 3;                               // Enable verbose debug output
+//    $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
@@ -29,16 +29,18 @@ $name = $_POST['name'];
     $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 465;                                    // TCP port to connect to
 
-    $mail->setFrom('skabaztest@mail.ru', 'Строительная компания');
+    $mail->setFrom('skabaztest@mail.ru', 'Los Pollos Hermados');
     $mail->addAddress('skabaz@yandex.ru', 'Roman');     // Add a recipient
     $mail->isHTML(true);                                  // Set email format to HTML
 
     $mail->Subject = 'Заказ на бургеры';
     $mail->Body    = 'Сообщение от пользователя:' . $name;
-    $mail->AltBody = 'Привет, это тестовое письмо, как связь, как сам';
+//    $mail->AltBody = 'Привет, это тестовое письмо, как связь, как сам';
 
     $result = $mail->send();
-echo "aaaaaand=>" . $result . 'Result';
+echo json_encode(array(
+    'status' => $result
+));
 //    if(1==1) {
 //        echo json_encode(['error' => 1, 'message' => 'Ваше сообщение НЕ было отправлено']);
 //        echo 'Mailer Error: ' . $mail->ErrorInfo;

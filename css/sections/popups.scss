@@ -30,3 +30,37 @@
     //height: 15px;
   }
 }
+
+
+.status-popup {
+  display: none;
+  width: 260px;
+  border-radius: 6px;
+  background-color: #fff;
+  //position: fixed;
+  //top: 50%;
+  //left: 50%;
+  //transform: translate(-50%, -50%);
+  padding: 20px;
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__message {
+    margin-bottom: 35px;
+    @include text($black);
+  }
+
+  &#error-popup {
+    .status-popup__message {
+      color: $red;
+    }
+  }
+  //TODO разобраться откуда берется обводка кнопки заказать без ховера
+  //TODO в ревью попапе перенести закрывание на кастомную кнопку, возможно нужно поменять position у фулл ревью попапа
+  .fancybox-close-small {
+    display: none;
+  }
+}
+

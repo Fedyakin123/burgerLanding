@@ -326,16 +326,40 @@ $(function() {
         var form = $(this),
             formData = form.serialize();
 
-        console.log(formData);
+        //console.log(formData);
 
         $.ajax({
             url: 'mail.php',
             type: 'POST',
             data: formData,
             success: function(data) {
-                console.log(data);
+               var popup = data.status ? '#success-popup' : '#error-popup';
+                //Всплывающее окно
+                $.fancybox.open({
+                    src  : popup,
+                    type : 'inline',
+                    opts : {
+                        onComplete : function() {
+                            console.info('done!');
+                        },
+                        afterClose : function() {
+                            form.trigger('reset');
+                        }
+                    }
+                });
+
+
             }
         });
     })
+
+    //Закрываем по кнопке
+
+    $('.status-popup__close').on('click', function(e) {
+        e.preventDefault();
+
+        $.fancybox.close();
+
+    });
 
 });
