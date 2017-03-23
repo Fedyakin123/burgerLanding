@@ -1,6 +1,6 @@
-$(document).ready(function() {
-    console.log('sfsd');
-});
+//$(document).ready(function() {
+    //console.log('sfsd');
+//});
 // Реализуем One Page Scroll;
 
 $(function() {
@@ -148,13 +148,13 @@ $(function(){
 
 //    Меняем калораж бургеров:
     $('.burgers__arrow').on('click', function() {
-        console.log('sfs');
+        //console.log('sfs');
         var activeSlide = $('.owl-item').filter('.active');
 
-        console.log(activeSlide.index());
+        //console.log(activeSlide.index());
 
         var kcal = $('.kcal__amount');
-        console.log(kcal.text());
+        //console.log(kcal.text());
 
 
         switch (activeSlide.index()) {
