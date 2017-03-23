@@ -13,14 +13,17 @@
 
     <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="plugins/owl.carousel.css">
+    <link rel="stylesheet" href="plugins/jquery.fancybox.css">
 
     <title>Los Pollos Hermanos</title>
 </head>
 <body>
     <div class="wrapper">
-
-        <!-- Section 1-->
-        <section class="section main" id="main">
+        <!-- Special block for OPS-->
+       <div class="maincontent">
+            <!-- Section 1-->
+            <section class="section main" id="main">
             <h2 style="font-size: 0;">О нас</h2>
 
 
@@ -36,25 +39,25 @@
                         <nav class="navigation">
                             <ul class="navigation__list">
                                 <li class="navigation__item">
-                                    <a href="#best" class="navigation__link">О нас</a>
+                                    <a href="1" class="navigation__link">О нас</a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a href="#burgers" class="navigation__link">Бургеры</a>
+                                    <a href="2" class="navigation__link">Бургеры</a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a href="#team" class="navigation__link">Команда</a>
+                                    <a href="3" class="navigation__link">Команда</a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a href="#menu" class="navigation__link">Меню</a>
+                                    <a href="4" class="navigation__link">Меню</a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a href="#review" class="navigation__link">Отзывы</a>
+                                    <a href="5" class="navigation__link">Отзывы</a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a href="#map" class="navigation__link">Контакты</a>
+                                    <a href="7" class="navigation__link">Контакты</a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a href="#delivery" class="navigation__link btn">Заказать</a>
+                                    <a href="6" class="navigation__link btn">Заказать</a>
                                 </li>
                             </ul>
                         </nav>
@@ -87,10 +90,10 @@
 
         </section>
 
-        <!-- Section 2-->
-        <section class="section best" id="best">
+            <!-- Section 2-->
+            <section class="section best" id="best">
             <div class="container">
-                <h2 class="best__title title title_black">Мыh3чшие</h2>
+                <h2 class="best__title title title_black">Мы Лучшие</h2>
                 <ul class="best__list">
                     <li class="best__item">
                         <div class="why-best__container">
@@ -130,106 +133,186 @@
 
         </section>
 
-        <!-- Section 3-->
-        <section class="section burgers" id="burgers">
+            <!-- Section 3-->
+            <section class="section burgers" id="burgers">
 
             <div class="container">
-                <div class="burgers__left">
-                    <div class="burgers__pic">
-                        <img src="img/content/slider/Dark-beef-burger.png" alt="Dark beef burger" class="burgers__img">
-                    </div>
-                </div>
+                <div class="burgers-slider-wrap">
+                    <div class="recepie">
+                        <img src="img/icons/burger.svg" alt="ingredients" class="recepie__icon-pic">
+                        <div class="recepie__icon-text">Состав</div>
+                        <div class="recepie__dropdown">
+                            <!-- Таблица для выпадающей плашки-->
+                            <table class="recepie__table">
+                                <tbody>
+                                <tr class="recepie__table-row">
+                                    <td class="recepie__table-cell">
+                                        <div class="recepie__table-icon">
+                                            <img src="img/icons/beef.svg" alt="beef" class="recepie__table-img">
+                                        </div>
+                                    </td>
+                                    <td class="recepie__table-cell">Говядина</td>
+                                    <td class="recepie__table-cell">300г</td>
+                                </tr>
+                                <tr class="recepie__table-row">
+                                    <td class="recepie__table-cell">
+                                        <div class="recepie__table-icon">
+                                            <img src="img/icons/buns.svg" alt="buns" class="recepie__table-img">
+                                        </div>
+                                    </td>
+                                    <td class="recepie__table-cell">Булочки</td>
+                                    <td class="recepie__table-cell">100г</td>
+                                </tr>
+                                <tr class="recepie__table-row">
+                                    <td class="recepie__table-cell">
+                                        <div class="recepie__table-icon">
+                                            <img src="img/icons/salad.svg" alt="salad" class="recepie__table-img">
+                                        </div>
+                                    </td>
+                                    <td class="recepie__table-cell">Зелень</td>
+                                    <td class="recepie__table-cell">70г</td>
+                                </tr>
+                                <tr class="recepie__table-row">
+                                    <td class="recepie__table-cell">
+                                        <div class="recepie__table-icon">
+                                            <img src="img/icons/sauce.svg" alt="sauce" class="recepie__table-img">
+                                        </div>
+                                    </td>
+                                    <td class="recepie__table-cell">Соус</td>
+                                    <td class="recepie__table-cell">70г</td>
+                                </tr>
+                                <tr class="recepie__table-row">
+                                    <td class="recepie__table-cell">
+                                        <div class="recepie__table-icon">
+                                            <img src="img/icons/cucumber.svg" alt="veggies" class="recepie__table-img">
+                                        </div>
+                                    </td>
+                                    <td class="recepie__table-cell">Овощи</td>
+                                    <td class="recepie__table-cell">150г</td>
+                                </tr>
+                                <tr class="recepie__table-row">
+                                    <td class="recepie__table-cell">
+                                        <div class="recepie__table-icon">
+                                            <img src="img/icons/cheese.svg" alt="cheese" class="recepie__table-img">
+                                        </div>
+                                    </td>
+                                    <td class="recepie__table-cell">Сыр</td>
+                                    <td class="recepie__table-cell">80г</td>
+                                </tr>
+                                </tbody>
+                            </table>
 
-                <div class="burgers__right">
-                    <h2 class="burgers__title title title_white"> Dark beef burger</h2>
-                    <div class="burgers__description">
-                        <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра Эмменталь, лвумя помидорами, луком, салатом и соусом гриль. Теперь с добавлением экзотического соуса "Чураско"!</p>
+                        </div>
                     </div>
-                    <div class="burgers__order">
-                        <div class="burgers__price title title_red">500</div>
-                        <div class="burgers__price-currency">рублей</div>
-                        <a href="#delivery" class="burgers__btn btn order-btn">Заказать</a>
+                    <div class="kcal">
+                        <img src="img/icons/kkal.svg" alt="Kcal" class="kcal__icon">
+                        <span class="kcal__amount">1200</span> <br/>
+                        <span class="kcal__measure">Kcal</span>
                     </div>
-                </div>
-                <div class="recepie">
-                    <img src="img/icons/burger.svg" alt="ingredients" class="recepie__icon-pic">
-                    <div class="recepie__icon-text">Состав</div>
-                    <div class="recepie__dropdown">
-                        <!-- Таблица для выпадающей плашки-->
-                        <table class="recepie__table">
-                            <tbody>
-                            <tr class="recepie__table-row">
-                                <td class="recepie__table-cell">
-                                    <div class="recepie__table-icon">
-                                        <img src="img/icons/beef.svg" alt="beef" class="recepie__table-img">
-                                    </div>
-                                </td>
-                                <td class="recepie__table-cell">Говядина</td>
-                                <td class="recepie__table-cell">300г</td>
-                            </tr>
-                            <tr class="recepie__table-row">
-                                <td class="recepie__table-cell">
-                                    <div class="recepie__table-icon">
-                                        <img src="img/icons/buns.svg" alt="buns" class="recepie__table-img">
-                                    </div>
-                                </td>
-                                <td class="recepie__table-cell">Булочки</td>
-                                <td class="recepie__table-cell">100г</td>
-                            </tr>
-                            <tr class="recepie__table-row">
-                                <td class="recepie__table-cell">
-                                    <div class="recepie__table-icon">
-                                        <img src="img/icons/salad.svg" alt="salad" class="recepie__table-img">
-                                    </div>
-                                </td>
-                                <td class="recepie__table-cell">Зелень</td>
-                                <td class="recepie__table-cell">70г</td>
-                            </tr>
-                            <tr class="recepie__table-row">
-                                <td class="recepie__table-cell">
-                                    <div class="recepie__table-icon">
-                                        <img src="img/icons/sauce.svg" alt="sauce" class="recepie__table-img">
-                                    </div>
-                                </td>
-                                <td class="recepie__table-cell">Соус</td>
-                                <td class="recepie__table-cell">70г</td>
-                            </tr>
-                            <tr class="recepie__table-row">
-                                <td class="recepie__table-cell">
-                                    <div class="recepie__table-icon">
-                                        <img src="img/icons/cucumber.svg" alt="veggies" class="recepie__table-img">
-                                    </div>
-                                </td>
-                                <td class="recepie__table-cell">Овощи</td>
-                                <td class="recepie__table-cell">150г</td>
-                            </tr>
-                            <tr class="recepie__table-row">
-                                <td class="recepie__table-cell">
-                                    <div class="recepie__table-icon">
-                                        <img src="img/icons/cheese.svg" alt="cheese" class="recepie__table-img">
-                                    </div>
-                                </td>
-                                <td class="recepie__table-cell">Сыр</td>
-                                <td class="recepie__table-cell">80г</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    <ul class="burgers-slider owl-carousel">
+                        <li class="burgers-slider__item">
+                            <div class="burgers__left">
+                                <div class="burgers__pic">
+                                    <img src="img/content/slider/Dark-beef-burger.png" alt="Dark beef burger" class="burgers__img">
+                                </div>
+                            </div>
+                            <div class="burgers__right">
+                                <h2 class="burgers__title title title_white"> Dark beef burger</h2>
+                                <div class="burgers__description">
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра Эмменталь, лвумя помидорами, луком, салатом и соусом гриль. Теперь с добавлением экзотического соуса "Чураско"!</p>
+                                </div>
+                                <div class="burgers__order">
+                                    <div class="burgers__price title title_red">500</div>
+                                    <div class="burgers__price-currency">рублей</div>
+                                    <a href="#delivery" class="burgers__btn btn order-btn">Заказать</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="burgers-slider__item">
+                            <div class="burgers__left">
+                                <div class="burgers__pic">
+                                    <img src="img/content/slider/burger_sandwich_PNG4124.png" alt="Dark beef burger" class="burgers__img">
+                                </div>
+                            </div>
+                            <div class="burgers__right">
+                                <h2 class="burgers__title title title_white">Burger sandwich</h2>
+                                <div class="burgers__description">
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра Эмменталь, лвумя помидорами, луком, салатом и соусом гриль. Теперь с добавлением экзотического соуса "Чураско"!</p>
+                                </div>
+                                <div class="burgers__order">
+                                    <div class="burgers__price title title_red">450</div>
+                                    <div class="burgers__price-currency">рублей</div>
+                                    <a href="#delivery" class="burgers__btn btn order-btn">Заказать</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="burgers-slider__item">
+                            <div class="burgers__left">
+                                <div class="burgers__pic">
+                                    <img src="img/content/slider/NYC-Diner-Bacon-Cheeseburger.png" alt="Dark beef burger" class="burgers__img">
+                                </div>
+                            </div>
+                            <div class="burgers__right">
+                                <h2 class="burgers__title title title_white"> NYC Bacon Burger</h2>
+                                <div class="burgers__description">
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра Эмменталь, лвумя помидорами, луком, салатом и соусом гриль. Теперь с добавлением экзотического соуса "Чураско"!</p>
+                                </div>
+                                <div class="burgers__order">
+                                    <div class="burgers__price title title_red">800</div>
+                                    <div class="burgers__price-currency">песо</div>
+                                    <a href="#delivery" class="burgers__btn btn order-btn">Заказать</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="burgers-slider__item">
+                            <div class="burgers__left">
+                                <div class="burgers__pic">
+                                    <img src="img/content/slider/Spicy_Shrimp_Burger.png" alt="Dark beef burger" class="burgers__img">
+                                </div>
+                            </div>
+                            <div class="burgers__right">
+                                <h2 class="burgers__title title title_white">Spicy Shrimp Burger</h2>
+                                <div class="burgers__description">
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра Эмменталь, лвумя помидорами, луком, салатом и соусом гриль. Теперь с добавлением экзотического соуса "Чураско"!</p>
+                                </div>
+                                <div class="burgers__order">
+                                    <div class="burgers__price title title_red">100</div>
+                                    <div class="burgers__price-currency">драхм</div>
+                                    <a href="#delivery" class="burgers__btn btn order-btn">Заказать</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="burgers-slider__item">
+                            <div class="burgers__left">
+                                <div class="burgers__pic">
+                                    <!-- TODO Нормальные имена картинкам-->
+                                    <img src="img/content/slider/Chiken%20burger.png" alt="Dark beef burger" class="burgers__img">
+                                </div>
+                            </div>
+                            <div class="burgers__right">
+                                <h2 class="burgers__title title title_white">Chicken burger</h2>
+                                <div class="burgers__description">
+                                    <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра Эмменталь, лвумя помидорами, луком, салатом и соусом гриль. Теперь с добавлением экзотического соуса "Чураско"!</p>
+                                </div>
+                                <div class="burgers__order">
+                                    <div class="burgers__price title title_red">350</div>
+                                    <div class="burgers__price-currency">фунтов</div>
+                                    <a href="#delivery" class="burgers__btn btn order-btn">Заказать</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
 
-                    </div>
+                    <a href="#" class="burgers__arrow burgers__arrow_prev"></a>
+                    <a href="#" class="burgers__arrow burgers__arrow_next"></a>
+
                 </div>
-                <div class="kcal">
-                    <img src="img/icons/kkal.svg" alt="Kcal" class="kcal__icon">
-                    <span class="kcal__amount">1200</span> <br/>
-                    <span class="kcal__measure">Kcal</span>
-                </div>
-                <a href="#" class="burgers__arrow burgers__arrow_prev"></a>
-                <a href="#" class="burgers__arrow burgers__arrow_next"></a>
             </div>
 
         </section>
 
-        <!-- Section 4-->
-        <section class="section team" id="team">
+            <!-- Section 4-->
+            <section class="section team" id="team">
             <div class="team__container">
                 <h2 class="team__title title">Команда</h2>
 
@@ -248,7 +331,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="team-acco__item team-acco__item_active">
+                    <li class="team-acco__item">
                         <a href="#" class="team-acco__trigger">
                             Ричард Джеймс
                         </a>
@@ -294,13 +377,13 @@
 
         </section>
 
-        <!-- Section 5-->
-        <section class="section menu" id="menu">
+            <!-- Section 5-->
+            <section class="section menu" id="menu">
             <h2 class="menu__title title title_white">Меню</h2>
 
             <!-- Accordion-->
                 <ul class="menu-acco">
-                    <li class="menu-acco__item menu-acco__item_active">
+                    <li class="menu-acco__item">
                         <a href="#menu" class="menu-acco__trigger" style="background-image: url('img/content/menuAcco/meat-eaters.jpg')">
                             <span class="menu-acco__trigger-title title title_white">
                                 Для мясоедов
@@ -351,8 +434,8 @@
                 </ul>
         </section>
 
-        <!-- Section 6-->
-        <section class="section review" id="review">
+            <!-- Section 6-->
+            <section class="section review" id="review">
             <ul class="review__list">
                 <li class="review__item">
                     <div class="reviewer">
@@ -362,7 +445,7 @@
                             <div class="reviewer__info">
                                 <h3 class="reviewer__name">Иван Крузенштерн</h3>
                                 <div class="reviewer__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
-                                <a href="#" class="reviewer__btn btn">Подробнее</a>
+                                <a href="#full-review" class="reviewer__btn btn">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -376,7 +459,7 @@
                             <div class="reviewer__info">
                                 <h3 class="reviewer__name">Иван Крузенштерн</h3>
                                 <div class="reviewer__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
-                                <a href="#" class="reviewer__btn btn">Подробнее</a>
+                                <a href="#full-review" class="reviewer__btn btn">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -390,7 +473,7 @@
                             <div class="reviewer__info">
                                 <h3 class="reviewer__name">Иван Крузенштерн</h3>
                                 <div class="reviewer__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
-                                <a href="#" class="reviewer__btn btn">Подробнее</a>
+                                <a href="#full-review" class="reviewer__btn btn">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -404,7 +487,7 @@
                             <div class="reviewer__info">
                                 <h3 class="reviewer__name">Иван Крузенштерн</h3>
                                 <div class="reviewer__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
-                                <a href="#" class="reviewer__btn btn">Подробнее</a>
+                                <a href="#full-review" class="reviewer__btn btn">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -418,7 +501,7 @@
                             <div class="reviewer__info">
                                 <h3 class="reviewer__name">Иван Крузенштерн</h3>
                                 <div class="reviewer__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
-                                <a href="#" class="reviewer__btn btn">Подробнее</a>
+                                <a href="#full-review" class="reviewer__btn btn">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -432,7 +515,7 @@
                             <div class="reviewer__info">
                                 <h3 class="reviewer__name">Иван Крузенштерн</h3>
                                 <div class="reviewer__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
-                                <a href="#" class="reviewer__btn btn">Подробнее</a>
+                                <a href="#full-review" class="reviewer__btn btn">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -446,7 +529,7 @@
                             <div class="reviewer__info">
                                 <h3 class="reviewer__name">Иван Крузенштерн</h3>
                                 <div class="reviewer__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
-                                <a href="#" class="reviewer__btn btn">Подробнее</a>
+                                <a href="#full-review" class="reviewer__btn btn">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -460,7 +543,7 @@
                             <div class="reviewer__info">
                                 <h3 class="reviewer__name">Иван Крузенштерн</h3>
                                 <div class="reviewer__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
-                                <a href="#" class="reviewer__btn btn">Подробнее</a>
+                                <a href="#full-review" class="reviewer__btn btn">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -468,13 +551,13 @@
             </ul>
         </section>
 
-        <!-- Section 7-->
-        <section class="section delivery" id="delivery">
+            <!-- Section 7-->
+            <section class="section delivery" id="delivery">
            <div class="container">
                <h2 class="delivery__title title title_orange">Закажите доставку</h2>
-               
+
                <!-- Order form-->
-               <div class="order"> 
+               <div class="order">
                    <form action="#" method="post" class="order__form" id="order-form">
                        <div class="order__column">
                            <div class="order__row order__row_double">
@@ -545,13 +628,13 @@
                        </div>
                    </form>
                </div>
-               
-               
+
+
            </div>
         </section>
 
-        <!-- Section 8-->
-        <section class="section map" id="map">
+            <!-- Section 8-->
+           <section class="section map" id="map">
             <h2 style="font-size: 0;">Контакты</h2>
             <div class="yandex-map"></div>
 
@@ -595,10 +678,14 @@
                 </div>
             </footer>
         </section>
-
+       </div>
     </div>
+
+
+
+    <!-- fixed menu-->
     <ul class="fixed-menu">
-        <li class="fixed-menu__item">
+        <li class="fixed-menu__item active">
             <a href="#main" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
@@ -623,5 +710,24 @@
             <a href="#map" class="fixed-menu__link"></a>
         </li>
     </ul>
+
+    <!-- Popup review-->
+
+    <div class="full-review popup" id="full-review">
+        <h3 class="full-review__name">Иван Крузенштерн</h3>
+        <div class="full-review__text text">На мели мы налима лениво ловили. Меняли налима вы мне на линя. О любви не меня ли вы мило молили? В туманы лимана манили меня!</div>
+        <!-- Почему то не ловит клик-->
+        <!--<a href="#" class="full-review__close">-->
+            <!--<img src="img/icons/close.svg" alt="" class="full-review__close-pic">-->
+        <!--</a>-->
+    </div>
+
+    <!-- scripts-->
+
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="plugins/owl.carousel.js"></script>
+    <script src="plugins/jquery.inputmask.bundle.js"></script>
+    <script src="plugins/jquery.fancybox.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+.full-review {
+  display: none;
+  position: fixed !important; //иначе прилипает
+  width: 460px;
+  background-color: #fff;
+  border-radius: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+
+  &__name {
+    font-family: 'gagalin';
+    color: $black;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-top: 25px;
+    line-height: 1.5;
+    color: $black;
+  }
+
+  &__close {
+    //position: absolute;
+    //top: 13px;
+    //right: 13px;
+    //width: 15px;
+    //height: 15px;
+  }
+}

@@ -1,0 +1,14 @@
+.fancybox-overlay {
+  background: rgba(#2f3234, .92);
+}
+
+.fancybox-close-small {
+  //display: none;
+  background-image: url('../img/icons/close.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  
+  &::after {
+    display: none;
+  }
+}

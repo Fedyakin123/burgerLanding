@@ -3,6 +3,13 @@
   right: 40px;
   top: 90px;
 
+  .active {
+    .fixed-menu__link::before {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
   &__item {
     margin: 10px auto;
   }
@@ -23,8 +30,8 @@
     }
 
     &::after {
-      width: 8px;
-      height: 8px;
+      width: 6px;
+      height: 6px;
       background-color: #fff;
       border-radius: 50%;
     }
@@ -36,9 +43,9 @@
       border: 1px solid white;
       transition: .3s;
     }
-    &:hover::before {
-        width: 15px;
-        height: 15px;
+    &:hover::before, {
+        width: 17px;
+        height: 17px;
     }
   }
 }

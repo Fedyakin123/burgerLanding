@@ -24,18 +24,20 @@
       float: left;
       height: 100%;
       @extend %clearfix;
-
-    //  for Active
-      &_active {
-        .menu-acco__content {
-          width: 550px;
-        }
-
-        .menu-acco__trigger-title {
-          color: $yellow;
-        }
-      }
     }
+
+
+.menu-acco__item.active {
+  //  for Active
+  .menu-acco__content {
+    width: 550px;
+  }
+
+  .menu-acco__trigger-title {
+    color: $yellow;
+  }
+}
+
 
     &__trigger {
       height: 100%;

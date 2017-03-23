@@ -70,6 +70,7 @@
   border-radius: 5px;
   background-color: rgba($red, .4);
   transition: .3s;
+  z-index: 50;
 
   &:hover {
     background-color: $red;
@@ -77,6 +78,7 @@
     .recepie__dropdown {
       left: 90px;
       opacity: 1;
+      display: block;
     }
   }
 

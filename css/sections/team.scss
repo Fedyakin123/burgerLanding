@@ -23,17 +23,18 @@
 }
 
 
-.team-acco__item_active {
-  .person {
-    display: block;
-  }
-  .team-acco__trigger {
-    color: $yellow;
-    &::before {
-      transform: rotate(180deg);
+.team-acco__item.active {
+    .team-acco__trigger {
+      color: $yellow;
+
+      &::before {
+        transform: rotate(180deg);
+      }
     }
-  }
 }
+
+
+
 
 .team-acco__trigger {
   font-family: 'gagalin';
