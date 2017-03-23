@@ -558,7 +558,7 @@
 
                <!-- Order form-->
                <div class="order">
-                   <form action="#" method="post" class="order__form" id="order-form">
+                   <form action="#" method="get" class="order__form" id="order-form">
                        <div class="order__column">
                            <div class="order__row order__row_double">
                                <label class="order__cell">
@@ -634,9 +634,11 @@
         </section>
 
             <!-- Section 8-->
-           <section class="section map" id="map">
+           <section class="section map">
             <h2 style="font-size: 0;">Контакты</h2>
-            <div class="yandex-map"></div>
+            <div class="yandex-map" id="map">
+
+            </div>
 
             <!-- Footer -->
             <footer class="footer">
@@ -728,6 +730,8 @@
     <script src="plugins/owl.carousel.js"></script>
     <script src="plugins/jquery.inputmask.bundle.js"></script>
     <script src="plugins/jquery.fancybox.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
     <script src="js/main.js"></script>
 </body>
 </html>

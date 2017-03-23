@@ -512,9 +512,6 @@ label {
 .delivery {
   background-image: url("../img/bg/delivery_bg.jpg"); }
 
-.map {
-  background-image: url("../img/bg/map_bg.jpg"); }
-
 .main {
   background-image: url("../img/bg/main_bg.jpg");
   position: relative; }
@@ -1039,7 +1036,6 @@ label {
   border-color: transparent; }
 
 .yandex-map {
-  width: 100%;
   height: calc(100% - 60px); }
 
 .footer {

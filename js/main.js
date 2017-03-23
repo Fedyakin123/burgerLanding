@@ -276,3 +276,66 @@ $(function() {
         //$.fancybox.getInstance().close();
     //});
 });
+
+
+//Подключаем яндекс карты
+
+
+$(function(){
+    ymaps.ready(init);
+    var myMap;
+
+    function init(){
+        myMap = new ymaps.Map("map", {
+            center: [59.91558890, 30.30890289],
+            zoom: 14,
+            controls: []
+        });
+
+//коллекция координат
+
+        var coords = [
+                [59.90760194, 30.31318547],
+                [59.92266830, 30.29391173],
+                [59.91866765, 30.32542702]
+            ],
+            myCollection = new ymaps.GeoObjectCollection({}, {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/icons/map-marker.svg',
+                iconImageSize: [46, 57],
+                iconImageOffset: [-24, -50]
+            });
+//перебираем коллекцию
+
+        for (var i = 0; i < coords.length; i++) {
+            myCollection.add(new ymaps.Placemark(coords[i]));
+        }
+
+        myMap.geoObjects.add(myCollection);
+
+        myMap.behaviors.disable('scrollZoom');
+    }
+});
+
+//form submit
+
+$(function() {
+    $('#order-form').on('submit', function(e) {
+        e.preventDefault();
+
+        var form = $(this),
+            formData = form.serialize();
+
+        console.log(formData);
+
+        $.ajax({
+            url: 'mail.php',
+            type: 'POST',
+            data: formData,
+            success: function(data) {
+                console.log(data);
+            }
+        });
+    })
+
+});
