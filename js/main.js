@@ -177,6 +177,8 @@ $(function(){
 // Вертикальный аккордеон
 
 $(function() {
+    var inAnimation = false;
+
    $('.team-acco__trigger').on('click', function(e) {
        e.preventDefault();
 
@@ -188,15 +190,22 @@ $(function() {
            otherContent = container.find('.person');
 
 
-       if (!item.hasClass('active')) {
-           otherContent.slideUp();
-           items.removeClass('active');
-           content.slideDown();
-           item.addClass('active');
-       } else  {
-           content.slideUp();
-           item.removeClass('active');
+       if (!inAnimation) {
+           inAnimation = true;
+           if (!item.hasClass('active')) {
+               otherContent.slideUp();
+               items.removeClass('active');
+               content.slideDown();
+               item.addClass('active');
+           } else  {
+               content.slideUp();
+               item.removeClass('active');
+           }
        }
+       $(".maincontent").on('transitionend', function() {
+          inAnimation = false;
+       });
+
    });
 
 //Закрываем по клику вне аккордеона
