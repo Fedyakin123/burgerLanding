@@ -6,4 +6,4 @@ $result = mail('skabaz@yandex.ru', 'Заказ на бургеры', $message);
 
 
 
-echo $result;
+echo $name;

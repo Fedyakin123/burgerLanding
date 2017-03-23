@@ -333,7 +333,7 @@ $(function() {
             type: 'POST',
             data: formData,
             success: function(data) {
-                console.log(data);
+                console.log(data + "123");
             }
         });
     })
