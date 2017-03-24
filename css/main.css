@@ -445,7 +445,6 @@ label {
 .wrapper {
   position: relative;
   overflow: hidden;
-  min-height: 100%;
   min-width: 960px; }
 
 .maincontent {
