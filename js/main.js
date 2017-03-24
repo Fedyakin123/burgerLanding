@@ -62,58 +62,58 @@
 //        }
 //
 //    });
-
-
-    //Навешиваем обработчик на фикс меню
-
-    $('.fixed-menu__link').on('click', function(e) {
-        e.preventDefault();
-        var sectionNumber = $(this).parent().index(); // Берем индекс ЛИ-шки внутри меню, он соответствует номеру секции
-
-        scrollToSection(sectionNumber)
-    });
-
-    //Обработчик стрелки вниз
-
-    $('.bottom-arrow').on('click', function(e) {
-        e.preventDefault();
-
-        scrollToSection(1);
-    });
-
-    //Обработчик навигации
-
-    $('.navigation__link').on('click', function(e) {
-        e.preventDefault();
-
-        var sectionNumber = $(this).attr('href'); //берем предварительно заготовленный хреф
-
-        scrollToSection(sectionNumber);
-    });
-// Обработчик стрелок клавиатуры
-    $(document).on('keydown', function(e) {
-        var currentSection = section.filter('.active'),
-            nextSection = currentSection.next(),
-            prevSection = currentSection.prev();
-
-        switch(e.key) {
-            case "ArrowUp" :
-                if (prevSection.length) {
-                    scrollToSection(prevSection.index())
-                }
-                break;
-            case  "ArrowDown" :
-                if (nextSection.length) {
-                    scrollToSection(nextSection.index())
-                }
-                break;
-        }
-
-    });
-//TODO обработчик по Shift+key
-    // Можно попробовать определять текущую секцию след. образом
-    //     currentSection = e.target.closest('section');
-});
+//
+//
+//    //Навешиваем обработчик на фикс меню
+//
+//    $('.fixed-menu__link').on('click', function(e) {
+//        e.preventDefault();
+//        var sectionNumber = $(this).parent().index(); // Берем индекс ЛИ-шки внутри меню, он соответствует номеру секции
+//
+//        scrollToSection(sectionNumber)
+//    });
+//
+//    //Обработчик стрелки вниз
+//
+//    $('.bottom-arrow').on('click', function(e) {
+//        e.preventDefault();
+//
+//        scrollToSection(1);
+//    });
+//
+//    //Обработчик навигации
+//
+//    $('.navigation__link').on('click', function(e) {
+//        e.preventDefault();
+//
+//        var sectionNumber = $(this).attr('href'); //берем предварительно заготовленный хреф
+//
+//        scrollToSection(sectionNumber);
+//    });
+//// Обработчик стрелок клавиатуры
+//    $(document).on('keydown', function(e) {
+//        var currentSection = section.filter('.active'),
+//            nextSection = currentSection.next(),
+//            prevSection = currentSection.prev();
+//
+//        switch(e.key) {
+//            case "ArrowUp" :
+//                if (prevSection.length) {
+//                    scrollToSection(prevSection.index())
+//                }
+//                break;
+//            case  "ArrowDown" :
+//                if (nextSection.length) {
+//                    scrollToSection(nextSection.index())
+//                }
+//                break;
+//        }
+//
+//    });
+////TODO обработчик по Shift+key
+//    // Можно попробовать определять текущую секцию след. образом
+//    //     currentSection = e.target.closest('section');
+//});
 
 
 // Cлайдер owl carousel
