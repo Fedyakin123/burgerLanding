@@ -3,65 +3,65 @@
 //});
 // Реализуем One Page Scroll;
 
-$(function() {
-
-    var section = $('.section'),
-        screen = $('.maincontent'),
-        inScroll = false;
-
-    var scrollToSection = function(sectionNumber) {
-        var position = 0;
-
-        if (!inScroll) {
-            inScroll = true;
-
-            position = (section.eq(sectionNumber).index() * -100) + '%';
-
-            section.eq(sectionNumber).addClass('active')
-                .siblings().removeClass('active');
-
-            $('.fixed-menu__item').eq(sectionNumber).addClass('active')
-                .siblings().removeClass('active'); // перемещаем кружок на фикс меню
-
-
-            screen.css({
-                "transform" : "translate3d(0, " + position + ", 0)"
-            });
-        }
-    $('.maincontent').on('transitionend', function() {
-        //console.log("trs over");
-        //Засунул таймаут в обработчик, чтобы корректно работало при зажатой клавише например
-        setTimeout(function() {
-            inScroll = false;
-
-            //TODO поменять цвет фиксед меню в светлых секциях
-        }, 300);
-    });
-
-
-    };
-
-    $('.wrapper').on('wheel', function(e) {
-        var deltaY = e.originalEvent.deltaY,
-            currentSection = section.filter('.active'),
-            nextSection = currentSection.next(),
-            prevSection = currentSection.prev();
-
-
-        //scroll down
-        if (deltaY > 0) {
-            if (nextSection.length) {//if section exists
-                scrollToSection(nextSection.index());
-            }
-        }
-        //scroll up
-        if (deltaY < 0) {
-            if (prevSection.length) {
-                scrollToSection(prevSection.index());
-            }
-        }
-
-    });
+//$(function() {
+//
+//    var section = $('.section'),
+//        screen = $('.maincontent'),
+//        inScroll = false;
+//
+//    var scrollToSection = function(sectionNumber) {
+//        var position = 0;
+//
+//        if (!inScroll) {
+//            inScroll = true;
+//
+//            position = (section.eq(sectionNumber).index() * -100) + '%';
+//
+//            section.eq(sectionNumber).addClass('active')
+//                .siblings().removeClass('active');
+//
+//            $('.fixed-menu__item').eq(sectionNumber).addClass('active')
+//                .siblings().removeClass('active'); // перемещаем кружок на фикс меню
+//
+//
+//            screen.css({
+//                "transform" : "translate3d(0, " + position + ", 0)"
+//            });
+//        }
+//    $('.maincontent').on('transitionend', function() {
+//        //console.log("trs over");
+//        //Засунул таймаут в обработчик, чтобы корректно работало при зажатой клавише например
+//        setTimeout(function() {
+//            inScroll = false;
+//
+//            //TODO поменять цвет фиксед меню в светлых секциях
+//        }, 300);
+//    });
+//
+//
+//    };
+//
+//    $('.wrapper').on('wheel', function(e) {
+//        var deltaY = e.originalEvent.deltaY,
+//            currentSection = section.filter('.active'),
+//            nextSection = currentSection.next(),
+//            prevSection = currentSection.prev();
+//
+//
+//        //scroll down
+//        if (deltaY > 0) {
+//            if (nextSection.length) {//if section exists
+//                scrollToSection(nextSection.index());
+//            }
+//        }
+//        //scroll up
+//        if (deltaY < 0) {
+//            if (prevSection.length) {
+//                scrollToSection(prevSection.index());
+//            }
+//        }
+//
+//    });
 
 
     //Навешиваем обработчик на фикс меню
